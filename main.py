@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-app.config['JWT_SECRET_KEY'] = 'movie_app'  # JWT uchun maxfiy kalit
+app.config['JWT_SECRET_KEY'] = 'movie_app'
 jwt = JWTManager(app)
 
 # Foydalanuvchi loginlari va parollari
